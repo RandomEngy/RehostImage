@@ -1,0 +1,51 @@
+<!ENTITY uploaddialog.title "Rehost Image">
+
+<!ENTITY options.title "Opciones Rehost Image">
+
+<!ENTITY locationsbox.label "Sitios donde transferir">
+<!ENTITY locationsbox.addbutton "Añadir sitio...">
+<!ENTITY locationsbox.deletebutton "Borrar sitio">
+<!ENTITY locationsbox.renamebutton "Renombrar Sitio...">
+
+<!ENTITY chooselocationname.label "Nombre del sitio:">
+
+<!ENTITY choosefilename.title "Elegir nombre de archivo">
+<!ENTITY choosefilename.label "Nombre de archivo:">
+
+<!ENTITY tabs.uploadlocations.label "Sitios donde transferir">
+<!ENTITY tabs.generalsettings.label "Opciones generales">
+<!ENTITY tabs.history.label "Historial">
+
+<!ENTITY tabs.hosting.label "Alojamiento">
+<!ENTITY tabs.settings.label "Configuración">
+
+<!ENTITY connectioninformationgroup.label "Conexión FTP">
+<!ENTITY targettype.label "Subir a">
+<!ENTITY host.label "Servidor [y puerto]">
+<!ENTITY username.label "Usuario">
+<!ENTITY password.label "Contraseña">
+<!ENTITY remotedirectory.label "Directorio al que subir">
+<!ENTITY webfolder.label "Directorio HTTP">
+
+<!ENTITY imgur.uploadanonymous.message "Las imágenes se subirán de forma anónima.">
+<!ENTITY imgur.signin.label "Acceder">
+<!ENTITY imgur.logout.label "Salir">
+<!ENTITY imgur.pin.label "PIN">
+<!ENTITY imgur.getpin.label "Obtener PIN Imgur">
+
+<!ENTITY renameoption.label "Mostrar una ventana en la que poder renombrar la imagen antes de subirla">
+
+<!ENTITY shortenurl.label "Acortar la URL con goo.gl">
+
+<!ENTITY resize.checkbox.label "Cambiar el tamaño de la imagen a...">
+<!ENTITY resize.maxwidth.label "Anchura máxima">
+<!ENTITY resize.maxheight.label "Altura máxima">
+<!ENTITY resize.imageformat.label "Formato de imagen">
+<!ENTITY resize.quality.label "Calidad">
+
+<!ENTITY history.enabledbox.label "Mantener historial de imágenes subidas">
+<!ENTITY history.clearbutton.label "Borrar historial">
+
+<!ENTITY contextoption.label "Alojar imagen y Copiar al Portapapeles">
+
+<!ENTITY uploadprogress.label "Enviando imagen:">

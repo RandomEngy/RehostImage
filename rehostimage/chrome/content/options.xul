@@ -1,0 +1,206 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://rehostimage/content/options.css" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://rehostimage/locale/rehostimage.ent">
+<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+            xmlns:html="http://www.w3.org/1999/xhtml"
+            id="rehostimage-prefs"
+            buttons="accept, cancel"
+            ondialogaccept="return onAccept()"
+            onload="onLoad()"
+            onbeforeunload="onClose()"
+            title="&options.title;"
+            style="width: 570px; height:415px;">
+
+  
+  <script type="application/x-javascript" src="chrome://rehostimage/content/options.js"/>
+  
+  <prefpane id="uploadLocationsPane" label="&tabs.uploadlocations.label;" image="chrome://rehostimage/content/icons/prefPane-uploadLocations.png">
+    <preferences>
+    </preferences>
+    <hbox flex="1">
+      <stringbundleset id="us.engy.rehostImage.stringbundles">
+        <stringbundle id="us.engy.rehostImage.bundle" src="chrome://rehostimage/locale/rehostimage.properties"/>
+      </stringbundleset>
+      <vbox>
+        <label value="&locationsbox.label;" />
+        <listbox id="locationsList" style="width:140px; height:175px;" onselect="onLocationSelected();" />
+        <button id="deletelocationbutton" label="&locationsbox.deletebutton;" oncommand="deleteLocation();" />
+        <button id="renameLocationButton" label="&locationsbox.renamebutton;" oncommand="renameLocation();" />
+        <button id="addlocationbutton" label="&locationsbox.addbutton;" oncommand="addNewLocation();" />
+      </vbox>
+      <tabbox id="locationTabs" flex="1">
+        <tabs>
+          <tab label="&tabs.hosting.label;" />
+          <tab label="&tabs.settings.label;" />
+        </tabs>
+        <tabpanels flex="1">
+          <tabpanel>
+            <vbox flex="1">
+              <hbox align="center">
+                <label control="targetTypeList" value="&targettype.label;:" />
+                <menulist id="targetTypeList" onselect="onTargetTypeSelected();">
+                  <menupopup>
+                    <menuitem label="Imgur" value="imgur" />
+                    <menuitem label="ImageShack" value="imageshack" />
+                    <menuitem label="FTP" value="ftp" />
+                  </menupopup>
+                </menulist>
+              </hbox>
+              <vbox id="imgurPane">
+                <box id="imgurLoadGif" pack="center" collapsed="true">
+                  <image src="chrome://rehostimage/content/icons/loading_icon.gif" width="16" height="16" />
+                </box>
+                <vbox id="imgurAnonPane" align="left">
+                  <description id="imgurAnonDescription">&imgur.uploadanonymous.message;</description>
+                  <hbox pack="center">
+                    <label id="imgurPinLabel" control="imgurPinTextBox" value="&imgur.pin.label;:" />
+                    <textbox type="text" id="imgurPinTextBox" flex="1" />
+                    <button id="imgurSignInButton" label="&imgur.signin.label;" oncommand="imgurSignIn();" width="110" />
+                  </hbox>
+                  <button id="imgurGetPinButton" label="&imgur.getpin.label;" oncommand="imgurGetPin();" width="120" />
+                </vbox>
+                <vbox id="imgurSignedInPane" align="left">
+                  <description id="imgurSignedInDescription" />
+                  <button id="imgurLogOutButton" label="&imgur.logout.label;" oncommand="imgurLogOut();" width="110" />
+                </vbox>
+                <description id="imgurStatusText" />
+              </vbox>
+              <vbox id="imageshackPane">
+                <grid id="imageshackUserPassGrid">
+                  <columns>
+                    <column />
+                    <column flex="1" />
+                  </columns>
+                  
+                  <rows>
+                    <row>
+                      <label control="imageshackUsername" value="&username.label;:" />
+                      <textbox type="text" id="imageshackUsername" />
+                    </row>
+                    <row>
+                      <label control="imageshackPassword" value="&password.label;:" />
+                      <textbox type="password" id="imageshackPassword" />
+                    </row>
+                  </rows>
+                </grid>
+              </vbox>
+              <vbox id="ftpPane">
+                <groupbox>
+                  <caption label="&connectioninformationgroup.label;" />
+                  <grid>
+                    <columns>
+                      <column />
+                      <column flex="1" />
+                    </columns>
+                    
+                    <rows>
+                      <row>
+                        <label control="host" value="&host.label;:" />
+                        <textbox type="text" id="host" />
+                      </row>
+                      <row>
+                        <label control="username" value="&username.label;:" />
+                        <textbox type="text" id="username" />
+                      </row>
+                      <row>
+                        <label control="password" value="&password.label;:" />
+                        <textbox type="password" id="password" />
+                      </row>
+                      <row style="height:10px;" />
+                      <row>
+                        <label control="remotedirectory" value="&remotedirectory.label;:" />
+                        <textbox type="text" id="remotedirectory" />
+                      </row>
+                    </rows>
+                  </grid>
+                </groupbox>
+                <spacer style="height:10px;" />
+                <hbox>
+                  <label control="webfolder" value="&webfolder.label;:" />
+                  <textbox type="text" id="webfolder" flex="1" />
+                </hbox>
+              </vbox>
+            </vbox>
+          </tabpanel>
+          <tabpanel>
+            <vbox>
+              <checkbox label="&renameoption.label;" id="showRenameOption" />
+              <checkbox label="&shortenurl.label;" id="shortenUrl" />
+              <checkbox label="&resize.checkbox.label;" id="resizeImageOption" onclick="onResizeImageOptionChanged();" />
+              <hbox>
+                <spacer width="10" />
+                <vbox>
+                  <grid>
+                    <columns>
+                      <column />
+                      <column width="50" />
+                      <column />
+                    </columns>
+                    
+                    <rows>
+                      <row>
+                        <label id="resizeWidthLabel" control="resizeWidth" value="&resize.maxwidth.label;:" />
+                        <textbox type="number" id="resizeWidth" min="0" hidespinbuttons="true" />
+                        <label id="resizeWidthPixelsLabel" value="pixels" />
+                      </row>
+                      <row>
+                        <label id="resizeHeightLabel" control="resizeHeight" value="&resize.maxheight.label;:" />
+                        <textbox type="number" id="resizeHeight" min="0" hidespinbuttons="true" />
+                        <label id="resizeHeightPixelsLabel" value="pixels" />
+                      </row>
+                    </rows>
+                  </grid>
+                  <spacer height="10" />
+                  <label id="resizeImageFormatLabel" value="&resize.imageformat.label;:" />
+                  <radiogroup id="resizeImageFormat" onselect="onResizeFormatOptionChanged();" >
+                    <grid>
+                      <columns>
+                        <column />
+                        <column />
+                        <column width="45" />
+                        <column flex="1" />
+                      </columns>
+                      
+                      <rows>
+                        <row>
+                          <radio id="resizeJpgOption" label="JPG" value="JPG"/>
+                          <label id="resizeImageQualityLabel" control="resizeImageQualityText" value="&resize.quality.label;:" />
+                          <description id="resizeImageQualityText" />
+                          <!--<textbox type="number" id="resizeImageQualityText" min="0" max="100" />-->
+                          <scale id="resizeImageQualityScale" min="0" max="100" width="200" onchange="onImageQualityChanged();" />
+                        </row>
+                        <row>
+                          <radio id="resizePngOption" label="PNG" value="PNG"/>
+                        </row>
+                      </rows>
+                    </grid>
+                  </radiogroup>
+                </vbox>
+              </hbox>
+            </vbox>
+          </tabpanel>
+        </tabpanels>
+      </tabbox>
+    </hbox>
+  </prefpane>
+  <!--<prefpane id="generalSettingsPane" label="&tabs.generalsettings.label;" image="chrome://rehostimage/content/icons/prefPane-generalSettings.png">
+    <preferences>
+    </preferences>
+    
+  </prefpane>-->
+  <prefpane id="historyPane" label="&tabs.history.label;" image="chrome://rehostimage/content/icons/prefPane-history.png">
+    <preferences>
+      <preference id="pref-historyenabled" name="extensions.rehostimage.historyenabled" type="bool" />
+    </preferences>
+    <vbox>
+      <hbox>
+        <checkbox id="logHistoryCheckbox" label="&history.enabledbox.label;" preference="pref-historyenabled" />
+        <button id="clearHistoryButton" label="&history.clearbutton.label;" oncommand="clearHistory();" />
+      </hbox>
+      <textbox id="historyText" multiline="true" rows="14" cols="75" />
+    </vbox>
+  </prefpane>
+</prefwindow>

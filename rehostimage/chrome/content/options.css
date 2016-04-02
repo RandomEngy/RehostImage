@@ -1,0 +1,11 @@
+.url
+{
+    color: #0000ff;
+    cursor: pointer;
+	display: -moz-inline-box;
+	display: inline-block;
+}
+.url:hover
+{
+	text-decoration: underline;
+}

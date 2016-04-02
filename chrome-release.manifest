@@ -1,0 +1,4 @@
+content rehostimage jar:chrome/rehostimage.jar!/content/
+overlay chrome://browser/content/browser.xul chrome://rehostimage/content/rehostimage.xul
+locale rehostimage en-US jar:chrome/rehostimage.jar!/locale/en-US/
+locale rehostimage es-ES jar:chrome/rehostimage.jar!/locale/es-ES/

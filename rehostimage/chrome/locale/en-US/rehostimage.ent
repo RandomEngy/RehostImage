@@ -1,0 +1,51 @@
+<!ENTITY uploaddialog.title "Rehost Image">
+
+<!ENTITY options.title "Rehost Image Options">
+
+<!ENTITY locationsbox.label "Upload Locations">
+<!ENTITY locationsbox.addbutton "Add Location...">
+<!ENTITY locationsbox.deletebutton "Delete Location">
+<!ENTITY locationsbox.renamebutton "Rename Location...">
+
+<!ENTITY chooselocationname.label "Location Name:">
+
+<!ENTITY choosefilename.title "Choose File Name">
+<!ENTITY choosefilename.label "File Name:">
+
+<!ENTITY tabs.uploadlocations.label "Upload Locations">
+<!ENTITY tabs.generalsettings.label "General Settings">
+<!ENTITY tabs.history.label "History">
+
+<!ENTITY tabs.hosting.label "Hosting">
+<!ENTITY tabs.settings.label "Settings">
+
+<!ENTITY connectioninformationgroup.label "FTP Connection">
+<!ENTITY targettype.label "Upload To">
+<!ENTITY host.label "Host [and port]">
+<!ENTITY username.label "Username">
+<!ENTITY password.label "Password">
+<!ENTITY remotedirectory.label "Upload directory">
+<!ENTITY webfolder.label "HTTP directory">
+
+<!ENTITY imgur.uploadanonymous.message "Images will be uploaded anonymously.">
+<!ENTITY imgur.signin.label "Sign in">
+<!ENTITY imgur.logout.label "Log out">
+<!ENTITY imgur.pin.label "PIN">
+<!ENTITY imgur.getpin.label "Get Imgur PIN">
+
+<!ENTITY renameoption.label "Show an option to rename the image before uploading">
+
+<!ENTITY shortenurl.label "Shorten the URL with goo.gl">
+
+<!ENTITY resize.checkbox.label "Resize images down to...">
+<!ENTITY resize.maxwidth.label "Maximum width">
+<!ENTITY resize.maxheight.label "Maximum height">
+<!ENTITY resize.imageformat.label "Image format">
+<!ENTITY resize.quality.label "Quality">
+
+<!ENTITY history.enabledbox.label "Keep history of uploaded images">
+<!ENTITY history.clearbutton.label "Clear history">
+
+<!ENTITY contextoption.label "Rehost Image and Copy to Clipboard">
+
+<!ENTITY uploadprogress.label "Image uploading:">

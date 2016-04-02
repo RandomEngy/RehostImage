@@ -1,0 +1,51 @@
+<!ENTITY uploaddialog.title "Képfeltöltés">
+
+<!ENTITY options.title "Képfeltöltés beállítások">
+
+<!ENTITY locationsbox.label "Feltöltés helyek">
+<!ENTITY locationsbox.addbutton "Új hely...">
+<!ENTITY locationsbox.deletebutton "Hely törlése">
+<!ENTITY locationsbox.renamebutton "Hely átnevezése...">
+
+<!ENTITY chooselocationname.label "Hely neve:">
+
+<!ENTITY choosefilename.title "Fájlnév kiválasztása">
+<!ENTITY choosefilename.label "Fájlnév:">
+
+<!ENTITY tabs.uploadlocations.label "Feltöltés helyek">
+<!ENTITY tabs.generalsettings.label "Beállítások">
+<!ENTITY tabs.history.label "Előzmények">
+
+<!ENTITY tabs.hosting.label "Tárhely">
+<!ENTITY tabs.settings.label "Beállítások">
+
+<!ENTITY connectioninformationgroup.label "FTP kapcsolat">
+<!ENTITY targettype.label "Feltöltés">
+<!ENTITY host.label "FTP link [és port]">
+<!ENTITY username.label "Felhasználónév">
+<!ENTITY password.label "Jelszó">
+<!ENTITY remotedirectory.label "Feltöltés könyvtár">
+<!ENTITY webfolder.label "HTTP könyvtár">
+
+<!ENTITY imgur.uploadanonymous.message "A képfeltöltés névtelen.">
+<!ENTITY imgur.signin.label "Bejelentkezés">
+<!ENTITY imgur.logout.label "KIJELENTKEZÉS">
+<!ENTITY imgur.pin.label "PIN">
+<!ENTITY imgur.getpin.label "Imgur PIN beszerzése">
+
+<!ENTITY renameoption.label "Átnevezés lehetőség megjelenítése feltöltés előtt">
+
+<!ENTITY shortenurl.label "Rövidített goo.gl link">
+
+<!ENTITY resize.checkbox.label "Képek átméretezése...">
+<!ENTITY resize.maxwidth.label "Maximális szélesség">
+<!ENTITY resize.maxheight.label "Maximális magasság">
+<!ENTITY resize.imageformat.label "Képformátum">
+<!ENTITY resize.quality.label "Minőség">
+
+<!ENTITY history.enabledbox.label "Feltöltött képek előzményének megőrzése">
+<!ENTITY history.clearbutton.label "Előzmények törlése">
+
+<!ENTITY contextoption.label "Képfeltöltés és a link másolása">
+
+<!ENTITY uploadprogress.label "Képfeltöltés:">

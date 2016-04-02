@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE window SYSTEM "chrome://rehostimage/locale/rehostimage.ent">
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        xmlns:html="http://www.w3.org/1999/xhtml"
+        id="rehostimage-chooselocationname"
+        buttons="accept, cancel"
+        ondialogaccept="return onAccept()"
+        onload="onWindowLoad()">
+  <stringbundleset id="us.engy.rehostImage.stringbundles">
+    <stringbundle id="us.engy.rehostImage.bundle" src="chrome://rehostimage/locale/rehostimage.properties"/>
+  </stringbundleset>
+  
+  <script type="application/x-javascript" src="chrome://rehostimage/content/choose_location_name.js"/>
+  
+  <hbox>
+    <label value="&chooselocationname.label;" control="newlocationname" />
+    <textbox type="text" id="newlocationname" />
+  </hbox>
+</dialog>

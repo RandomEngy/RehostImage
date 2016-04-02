@@ -1,0 +1,6 @@
+content  rehostimage chrome/content/
+overlay  chrome://browser/content/browser.xul chrome://rehostimage/content/rehostimage.xul
+locale   rehostimage en-US chrome/locale/en-US/
+locale   rehostimage es-ES chrome/locale/es-ES/
+locale   rehostimage hu-HU chrome/locale/hu-HU/
+resource rehostimage modules/
