@@ -111,7 +111,7 @@ var Imgur3RI = {
     
     var message = {
       method: "POST",
-      action: "https://api.imgur.com/3/image",
+      action: "https://imgur-apiv3.p.mashape.com/3/image",
       useAccessToken: useAccessToken,
       parameters: {
         image: base64data,
@@ -213,6 +213,8 @@ var Imgur3RI = {
     } else {
       request.setRequestHeader("Authorization", "Client-ID " + clientId);
     }
+
+    request.setRequestHeader("X-Mashape-Key", "rzpl6X8Q59mshZdtV36ci8T7HiREp1jqb0KjsnbtvQNAdbgIzA");
     
     if (progress) {
       request.upload.addEventListener("progress", progress, false);
