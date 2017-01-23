@@ -406,6 +406,22 @@ us.engy.rehostImage.main = {
 				this.imageUploader = new us.engy.rehostImage.imgurUploader(this.tempFile, this.remoteFileName, "", false);
 				this.imageUploader.executeTransfer();
 				break;
+			case "pomf":									
+				this.imageUploader = new us.engy.rehostImage.pomfUploader(this.tempFile, this.remoteFileName, this.mimeType);
+				this.imageUploader.executeTransfer();
+				break;
+			case "dropfile":									
+				this.imageUploader = new us.engy.rehostImage.dropfileUploader(this.tempFile, this.remoteFileName, this.mimeType);
+				this.imageUploader.executeTransfer();
+				break;	
+			case "imgsafe":									
+				this.imageUploader = new us.engy.rehostImage.imgsafeUploader(this.tempFile, this.remoteFileName, this.mimeType);
+				this.imageUploader.executeTransfer();
+				break;
+			case "biyori":									
+				this.imageUploader = new us.engy.rehostImage.biyoriUploader(this.tempFile, this.remoteFileName, this.mimeType);
+				this.imageUploader.executeTransfer();
+				break;	                                
 			case "imageshack":
 				this.imageUploader = new us.engy.rehostImage.imageshackUploader(this.tempFile, this.remoteFileName, this.mimeType, this.uploadLocation.userName, this.uploadLocation.password);
 				this.imageUploader.executeTransfer();

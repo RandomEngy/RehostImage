@@ -45,6 +45,10 @@
                   <menupopup>
                     <menuitem label="Imgur" value="imgur" />
                     <menuitem label="ImageShack" value="imageshack" />
+                    <menuitem label="Pomf" value="pomf" />
+                    <menuitem label="Dropfile" value="dropfile" />
+                    <menuitem label="ImgSafe" value="imgsafe" />
+                    <menuitem label="Biyori" value="biyori" />
                     <menuitem label="FTP" value="ftp" />
                   </menupopup>
                 </menulist>
@@ -68,6 +72,48 @@
                 </vbox>
                 <description id="imgurStatusText" />
               </vbox>
+             <vbox id="pomfPane">
+                <box id="imgurLoadGif" pack="center" collapsed="true">
+                  <image src="chrome://rehostimage/content/icons/loading_icon.gif" width="16" height="16" />
+                </box>
+                <vbox id="pomfAnonPane" align="left">
+                  <description id="imgurAnonDescription">&imgur.uploadanonymous.message;</description>
+                </vbox>
+                <description id="imgurStatusText" />
+              </vbox>
+
+              <vbox id="dropfilePane">
+                <box id="imgurLoadGif" pack="center" collapsed="true">
+                  <image src="chrome://rehostimage/content/icons/loading_icon.gif" width="16" height="16" />
+                </box>
+                <vbox id="dropfileAnonPane" align="left">
+		  <description id="dropfileAnonDescription">&dropfile.temphosting.message;</description>
+                  <description id="dropfileAnonDescription2">&imgur.uploadanonymous.message;</description>	  
+                </vbox>
+                <description id="imgurStatusText" />
+              </vbox>			  
+			  			  
+              <vbox id="imgsafePane">
+                <box id="imgurLoadGif" pack="center" collapsed="true">
+                  <image src="chrome://rehostimage/content/icons/loading_icon.gif" width="16" height="16" />
+                </box>
+                <vbox id="imgsafeAnonPane" align="left">
+		  <description id="imgsafeAnonDescription">&imgsafe.typeandsize.message;</description>
+                  <description id="imgsafeAnonDescription2">&imgur.uploadanonymous.message;</description>
+                </vbox>
+                <description id="imgurStatusText" />
+              </vbox>			  
+			 
+              <vbox id="biyoriPane">
+                <box id="imgurLoadGif" pack="center" collapsed="true">
+                  <image src="chrome://rehostimage/content/icons/loading_icon.gif" width="16" height="16" />
+                </box>
+                <vbox id="biyoriAnonPane" align="left">
+                  <description id="biyoriAnonDescription">&imgur.uploadanonymous.message;</description>
+                </vbox>
+                <description id="imgurStatusText" />
+              </vbox>
+              				               
               <vbox id="imageshackPane">
                 <grid id="imageshackUserPassGrid">
                   <columns>

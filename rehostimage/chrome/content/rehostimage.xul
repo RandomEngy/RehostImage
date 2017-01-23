@@ -4,12 +4,16 @@
 <overlay id="rehostimage" 
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <script type="application/x-javascript" src="chrome://rehostimage/content/rehostimage.js"/>
-  <script type="application/x-javascript" src="chrome://rehostimage/content/ftp_connection.js"/>
-  <script type="application/x-javascript" src="chrome://rehostimage/content/ftp_datastream.js"/>
-  <script type="application/x-javascript" src="chrome://rehostimage/content/post_uploader.js"/>
-  <script type="application/x-javascript" src="chrome://rehostimage/content/imageshack_uploader.js"/>
-  <script type="application/x-javascript" src="chrome://rehostimage/content/imgur_uploader.js"/>
- 
+  <script type="application/x-javascript" src="chrome://rehostimage/content/uploaders/ftp_connection.js"/>
+  <script type="application/x-javascript" src="chrome://rehostimage/content/uploaders/ftp_datastream.js"/>
+  <script type="application/x-javascript" src="chrome://rehostimage/content/uploaders/post_uploader.js"/>
+  <script type="application/x-javascript" src="chrome://rehostimage/content/uploaders/imageshack_uploader.js"/>
+  <script type="application/x-javascript" src="chrome://rehostimage/content/uploaders/imgur_uploader.js"/>
+  <script type="application/x-javascript" src="chrome://rehostimage/content/uploaders/pomf_uploader.js"/>
+  <script type="application/x-javascript" src="chrome://rehostimage/content/uploaders/dropfile_uploader.js"/>
+  <script type="application/x-javascript" src="chrome://rehostimage/content/uploaders/imgsafe_uploader.js"/>  
+  <script type="application/x-javascript" src="chrome://rehostimage/content/uploaders/biyori_uploader.js"/> 
+  
   <window>
     <stringbundleset id="us.engy.rehostImage.stringbundles">
       <stringbundle id="us.engy.rehostImage.bundle" src="chrome://rehostimage/locale/rehostimage.properties"/>

@@ -33,6 +33,10 @@
 <!ENTITY imgur.pin.label "PIN">
 <!ENTITY imgur.getpin.label "Get Imgur PIN">
 
+<!ENTITY dropfile.temphosting.message "This is a temporary hosting service. Images will be hosted for 24 hours then deleted.">
+
+<!ENTITY imgsafe.typeandsize.message "Supports only JPG, GIF and PNG images up to 20MB each.">
+
 <!ENTITY renameoption.label "Show an option to rename the image before uploading">
 
 <!ENTITY shortenurl.label "Shorten the URL with goo.gl">

@@ -113,8 +113,20 @@ function onLocationSelected() {
 			document.getElementById("imageshackPassword").value = selectedLocation.password != null ? selectedLocation.password : "";
 
 			break;
-		case "ftp":
+		case "pomf":
 			targetTypeList.selectedIndex = 2;
+			break;		
+		case "dropfile":
+			targetTypeList.selectedIndex = 3;
+			break;
+		case "imgsafe":
+			targetTypeList.selectedIndex = 4;
+			break;
+		case "biyori":
+			targetTypeList.selectedIndex = 5;
+			break;			
+                case "ftp":
+			targetTypeList.selectedIndex = 6;
 			
 			document.getElementById("host").value = selectedLocation.host;
 			document.getElementById("username").value = selectedLocation.userName;
@@ -150,6 +162,14 @@ function onTargetTypeSelected() {
 
 		document.getElementById("imageshackUsername").value = "";
 		document.getElementById("imageshackPassword").value = "";
+	}else if (newTargetType == "pomf"){
+		document.getElementById("pomfPane").collapsed = false;
+	}else if (newTargetType == "dropfile"){
+		document.getElementById("dropfilePane").collapsed = false;
+	}else if (newTargetType == "imgsafe"){
+		document.getElementById("imgsafePane").collapsed = false;
+	}else if (newTargetType == "biyori"){
+		document.getElementById("biyoriPane").collapsed = false;
 	} else {
 		document.getElementById("imgurPane").collapsed = false;
 		
@@ -234,6 +254,10 @@ function collapseAllPanes() {
 	document.getElementById("ftpPane").collapsed = true;
 	document.getElementById("imageshackPane").collapsed = true;
 	document.getElementById("imgurPane").collapsed = true;
+	document.getElementById("pomfPane").collapsed = true;
+	document.getElementById("dropfilePane").collapsed = true;
+	document.getElementById("imgsafePane").collapsed = true;
+	document.getElementById("biyoriPane").collapsed = true;        
 }
 
 function addNewLocation() {
