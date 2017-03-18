@@ -238,7 +238,7 @@ us.engy.rehostImage.main = {
 
 		var cacheUri = urifix.createFixupURI(this.imageSourceUrl, 0);
 		var cacheHostUri = null;
-		if (cacheUri.scheme != "data") {
+		if (cacheUri.scheme != "data" && cacheUri.scheme != "blob") {
 			cacheHostUri = (cacheUri.host.length > 0) ? urifix.createFixupURI(cacheUri.host, 0) : null;
 		}
 		
