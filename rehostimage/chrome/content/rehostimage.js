@@ -1,3 +1,5 @@
+// The main entry point for the extension.
+
 if (!us) var us = {};
 if (!us.engy) us.engy = {};
 if (!us.engy.rehostImage) us.engy.rehostImage = {};

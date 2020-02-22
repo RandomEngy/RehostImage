@@ -5,7 +5,7 @@
 
   <Description about="urn:mozilla:install-manifest">
     <em:id>rehostimage@engy.us</em:id>
-    <em:version>1.5.20</em:version>
+    <em:version>1.5.21</em:version>
     <em:type>2</em:type>
    
     <!-- Target Application this extension can install into, 
@@ -17,6 +17,13 @@
         <em:maxVersion>50.*</em:maxVersion>
       </Description>
     </em:targetApplication>
+    <em:targetApplication><!-- Pale Moon -->
+        <Description>
+            <em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id>
+            <em:minVersion>28.0</em:minVersion>
+            <em:maxVersion>29.*</em:maxVersion>
+        </Description>
+    </em:targetApplication>
    
     <!-- Front End MetaData -->
     <em:name>Rehost Image</em:name>
@@ -26,6 +33,6 @@
     <em:optionsURL>chrome://rehostimage/content/options.xul</em:optionsURL>
     <em:homepageURL>https://addons.mozilla.org/en-US/firefox/addon/9221</em:homepageURL>
     <em:iconURL>chrome://rehostimage/content/rehostimage.png</em:iconURL>
-	<em:multiprocessCompatible>true</em:multiprocessCompatible>
+    <em:multiprocessCompatible>true</em:multiprocessCompatible>
   </Description>      
 </RDF>
